@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name',500);
              $table->softDeletes();
-              $table->foreignId('maker_id')->constrained('makers');
+             
         });
     }
 

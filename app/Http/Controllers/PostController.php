@@ -220,6 +220,7 @@ return view ('profile/partials/update-maker', compact ('post','makers'));
     // 投稿データの作成
     $new_post = new Post();
     $new_post->user_id = Auth::id();
+     $new_post->work_id = 1;
     $new_post->title = $post['title'];
     $new_post->content = $post['content'];
      $new_post->access_count = 1;

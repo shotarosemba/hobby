@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
       $this->call([
          MakerSeeder::class,
-        Workseeder::class,
+        WorkSeeder::class,
       /*  FavoriteSeeder::class,
         MakerSeeder::class,
         WorkSeeder::class,*/

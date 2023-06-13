@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('name',500);
+            $table->string('title',500);
              $table->softDeletes();
              
         });

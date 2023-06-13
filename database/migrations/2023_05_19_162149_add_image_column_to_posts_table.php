@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-             $table->string('image', 100)->nullable();
+            
              $table->string('content',5000);
              $table->integer('access_count');
              $table->foreignId('work_id')->constrained('works');

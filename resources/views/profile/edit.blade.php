@@ -37,6 +37,7 @@
             @csrf
             <div class="title">
                 <h1>ブログ投稿(ゲスト不可)</h1>
+                <p>ブログ投稿後は必ずブログ編集でジャンル設定して下さい！</p>
                 <h2>Title</h2>
                 <input type="text" name="post[title]" placeholder="タイトル"/>
             </div>
@@ -50,6 +51,7 @@
          <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                 <div class="max-w-xl">
                   <h2>My blog(クリックで編集)</h2>   
+                  <p>ブログ投稿したら必ずここで編集！</p>
                   <p></p>
                   
                   @foreach ($posts as $post)

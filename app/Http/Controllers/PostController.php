@@ -168,7 +168,7 @@ return view ('profile/partials/update-maker', compact ('post','makers'));
     
     public function updateworks(Post $post)
     {
-        $works = DB::table('works')->select('id', 'name')->groupBy('name')->get();
+        $works =Work::distinct('name')->get();
 
 
         // ビューに渡す

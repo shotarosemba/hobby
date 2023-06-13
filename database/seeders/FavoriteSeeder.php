@@ -21,7 +21,7 @@ class FavoriteSeeder extends Seeder
             
         DB::table('favorite')->insert([
             'post_id'=>1,
-            'user_id'=>2,
+            'user_id'=>1,
             'created_at'=>new DateTime(),
             'updated_at'=>new DateTime(),
             ]);

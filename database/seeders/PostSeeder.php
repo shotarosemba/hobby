@@ -19,7 +19,7 @@ class PostSeeder extends Seeder
                 'updated_at' => new DateTime(),
                 'access_count'=>100,
                 'work_id'=>4,
-                'user_id'=>2,
+                'user_id'=>1,
                 ]);
                 
         DB::table('posts')->insert([
@@ -29,7 +29,7 @@ class PostSeeder extends Seeder
                 'updated_at' => new DateTime(),
                 'access_count'=>50,
                 'work_id'=>5,
-                'user_id'=>3,
+                'user_id'=>1,
                 ]);
     }
 }

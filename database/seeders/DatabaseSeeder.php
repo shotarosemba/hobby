@@ -17,9 +17,10 @@ class DatabaseSeeder extends Seeder
       $this->call([
          MakerSeeder::class,
         WorkSeeder::class,
-      /*  FavoriteSeeder::class,
-        MakerSeeder::class,
-        WorkSeeder::class,*/
+          PostSeeder::class,
+        FavoriteSeeder::class,
+        CommentSeeder::class,
+        
         
         ]);
     }

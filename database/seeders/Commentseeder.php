@@ -19,7 +19,7 @@ class Commentseeder extends Seeder
         
             
         DB::table('comments')->insert([
-            'user_id'=>2,
+            'user_id'=>1,
             'content'=>'comment  of userid=2',
             'post_id'=>3,
             'updated_at'=>new DateTime(),

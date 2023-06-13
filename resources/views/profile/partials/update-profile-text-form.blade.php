@@ -3,7 +3,7 @@
         <h2 class="text-lg font-medium text-gray-900">
             {{ __('My Profile') }}
 
-             {{ $user->profile }}
+            
            
         </h2>
        </header>
@@ -13,6 +13,7 @@
         <div class="profile">
             <h2>Profile</h2>
             <textarea name="profile" placeholder="write your profile here"/>
+             {{ $user->profile }}
             </textarea>
             
         </div>

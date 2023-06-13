@@ -222,6 +222,8 @@ return view ('profile/partials/update-maker', compact ('post','makers'));
     $new_post->user_id = Auth::id();
     $new_post->title = $post['title'];
     $new_post->content = $post['content'];
+     $new_post->access_count = 1;
+    
     $new_post->save();
 
     // リダイレクト

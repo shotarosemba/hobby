@@ -33,7 +33,7 @@ Route::put('/posts/{post}', [PostController::class, 'update'])->name('post.updat
 
 Route::get('/update-works/{post}',[PostController::class,'updateworks']);
 
-Route::post('/posts', [PostController::class, 'store']);
+Route::post('/post', [PostController::class, 'store']);
 
 Route::get('/', function () {
     return view('welcome');

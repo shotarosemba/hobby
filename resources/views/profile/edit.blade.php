@@ -33,7 +33,7 @@
              <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                 <div class="max-w-xl">
             
-             <form action="/posts" method="POST">
+             <form action="/post" method="POST">
             @csrf
             <div class="title">
                 <h1>ブログ投稿(ゲスト不可)</h1>

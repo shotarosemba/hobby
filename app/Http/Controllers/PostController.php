@@ -161,7 +161,8 @@ class PostController extends Controller
 // データベースに保存する
 $post->save();
 
- $makers = DB::table('makers')->select('id', 'name')->groupBy('name')->get();
+ 
+ $makers =Maker::distinct('name')->get();
 // リダイレクトする
 return view ('profile/partials/update-maker', compact ('post','makers')); 
 }

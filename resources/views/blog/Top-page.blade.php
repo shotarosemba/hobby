@@ -18,10 +18,13 @@
             
              
               @endforeach
+              
 　　　　　
             
              
             {{ $posts->links('vendor/pagination/bootstrap-5') }}
+             </div>  
+              
             
             <div class='maker'>
                 　<div class='makers'>
@@ -45,7 +48,9 @@
                   @endforeach
                 </div>
                   </div>  
-             </div>
+                    </div>  
+              
+             
         </body>
         
         <style>
@@ -67,7 +72,7 @@
   .paginate {
     position: absolute;
     bottom: 10px; /* 親要素の下から10pxの位置 */
-    right: 5Spx; /* 親要素の右から10pxの位置 */
+    right: 5px; /* 親要素の右から10pxの位置 */
     background-color: lightblue;
     padding: 10px;
   }
@@ -76,12 +81,13 @@
     position: relative;
     width: 800px;
     height: 600px;
-   
+      left: 300px;
+   top:0px;
   }
   
    .makers {
     position: absolute;
-    bottom: 900px; /* 親要素の下から10pxの位置 */
+    top: -500px; /* 親要素の下から10pxの位置 */
     right: 0px; /* 親要素の右から10pxの位置 */
 
     padding: 10px;
@@ -89,17 +95,17 @@
   
   .work{
     position: relative;
-    width: 300px;
-    height: 500px;
-     top: 90px; /* 親要素の上から50pxの位置 */
-    left: 100px; 
+    width: 800px;
+    height: 600px;
+     top:0px; /* 親要素の上から50pxの位置 */
+    left: 0px; 
    
   }
   
    .works {
     position: absolute;
-    bottom: 1500px; /* 親要素の下から10pxの位置 */
-    left: -500px; /* 親要素の右から10pxの位置 */
+    top: -1100px; /* 親要素の下から10pxの位置 */
+    left: 0px; /* 親要素の右から10pxの位置 */
 
     padding: 10px;
   }
